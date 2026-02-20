@@ -49,6 +49,22 @@
         grid-row: 2;
     }
 
+    .principal ul {
+        margin: 0;
+        padding: 4px;
+        columns: 2;
+        list-style: none;
+    }
+
+    #contato ul {
+        columns: 1;
+    }
+
+    .principal li {
+        margin: 0;
+        padding: 18px 0px;
+    }
+
     .menu {
         display: flex;
         flex-wrap: wrap;
