@@ -148,7 +148,6 @@ main {
 .principal a {
     color: var(--texto);
     text-decoration: none;
-    word-break: break-word;
 }
 
 .principal a:hover {
@@ -162,6 +161,25 @@ main {
 
 .principal a::before {
     content: "\1F517";
+    margin-right: 0.2em;
+}
+
+.principal ul {
+    columns: 2;
+    list-style: none;
+}
+
+.principal li {
+    padding: 8px 0px;
+}
+
+.principal li::before {
+    content: '\2713';
+    margin-right: 0.3em;
+}
+
+#celular a::before, #email a::before, #certificados a::before {
+    content: none;
 }
 
 .secundario {
