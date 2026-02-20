@@ -14,6 +14,15 @@
     --radius: 10px;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+        
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* TIPOGRAFIA */
 h1 {
     font-size: 2rem;
@@ -35,11 +44,15 @@ p {
     line-height: 1.6;
 }
 
+/* GRID GLOBAL */
+.principal, .secundario {
+    min-width: 0;
+}
+
 body {
     display: grid;
     grid-template-rows: auto auto auto 1fr auto;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    gap: 5px;
     background-color: var(--fundo);
     color: var(--texto);
     font-family: Arial, Helvetica, sans-serif;
@@ -50,10 +63,16 @@ header {
     background: var(--surface);
     border-radius: var(--radius);
     padding: 20px;
+    margin: 10px;
 
-    margin: 5px;
     grid-area: 1 / 1 / 2 / -1 ;
-    color: #f9fafb;
+
+    color: var(--texto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .menu {
@@ -69,6 +88,7 @@ header {
     gap: 10px;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .menu a {
@@ -94,14 +114,12 @@ header {
 
 main {
     margin: 5px;
-
     grid-column: 1 / -1;
 
     display: grid;
-    grid-template-rows: auto;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
-    place-items: start center;
+    align-items: start;
+    justify-items: stretch;
 }
 
 .principal {
@@ -130,6 +148,7 @@ main {
 .principal a {
     color: var(--texto);
     text-decoration: none;
+    word-break: break-word;
 }
 
 .principal a:hover {
@@ -146,9 +165,11 @@ main {
 }
 
 .secundario {
-    background: var(--surface-2);
+    min-width: 0;
+    width: 100%;
+    background: var(--fundo);
     border-radius: var(--radius);
-    padding: 20px;
+    padding: 0;
 
     grid-row: 1 / 2;
     grid-column: 2;
@@ -158,6 +179,13 @@ main {
 .secundario:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+
+.card {
+    background: var(--surface-2);
+    padding: 18px;
+    margin: 14px;
+    border-radius: var(--radius);
 }
 
 .secundario h2 {

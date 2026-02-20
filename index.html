@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Roberto dos Santos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css">
 </head>
 <body>
     <header class="topo">
@@ -12,29 +13,28 @@
         <p>Transformando conhecimento em soluções tecnológicas.</p>
     </header>
     <nav class="menu">
-        <a href="#" class="botao">Sobre</a>
-        <a href="#" class="botao">Formação</a>
-        <a href="#" class="botao">Habilidades</a>
-        <a href="#" class="botao">Experiência</a>
-        <a href="#" class="botao">Projetos</a>
-        <a href="#" class="botao">Certificados</a>
-        <a href="#" class="botao">Contato</a>
+        <a href="#sobre" class="botao">Sobre</a>
+        <a href="#formacao" class="botao">Formação</a>
+        <a href="#experiencia" class="botao">Experiência</a>
+        <a href="#projetos" class="botao">Projetos</a>
+        <a href="#certificados" class="botao">Certificados</a>
+        <a href="#contato" class="botao">Contato</a>
     </nav>
     <main>
         <div class="principal">
-            <section>
+            <section id="sobre">
                 <article>
                     <h1>Sobre</h1>
                     <p>Estudante de Sistemas de Informação pelo Instituto Federal de Alagoas, com experiência prática em suporte técnico, manutenção de sistemas e desenvolvimento web. Busco oportunidades para aplicar meus conhecimentos, evoluir tecnicamente e contribuir com soluções na área de tecnologia.</p>
                 </article>
             </section>
-            <section>
+            <section id="formacao">
                 <article>
                     <h2>Formação</h2>
                     <p>Bacharelado em Sistemas de Informação - em andamento. Formação voltada ao desenvolvimento de software, banco de dados, sistemas operacionais e engenharia de software, com foco em aplicação prática por meio de projetos acadêmicos.</p>
                 </article>
             </section>
-            <section>
+            <section id="experiencia">
                 <article>
                     <h2>Experiência profissional atual</h2>
                     <p>Atuação com manutenção e suporte em sistemas eletroeletrônicos de segurança, realizando configuração de sistemas, manutenção preventiva, diagnóstico de falhas e atualização de softwares. Experiência que fortaleceu minha visão prática sobre ambientes tecnológicos e atendimento a usuários.</p>
@@ -44,7 +44,7 @@
                     <p>Experiência na área administrativa como jovem aprendiz, desenvolvendo organização, responsabilidade, controle de processos e contato com rotinas corporativas.</p>
                 </article>
             </section>
-            <section>
+            <section id="projetos">
                 <article>
                     <h2>Projetos</h2>
                     <p>Projetos desenvolvidos durante a graduação e estudos pessoais, com foco na aplicação prática de tecnologias, resolução de problemas e evolução técnica.</p>
@@ -84,26 +84,26 @@
                     <p><strong>Tecnologias: JavaScript, EJS e Docker.</strong></p>
                 </article>
             </section>
-            <section>
+            <section id="certificados">
                 <article>
                     <h2>Certificados</h2>
                     <p>Cursos complementares voltados ao desenvolvimento profissional e tecnológico, incluindo Excel Avançado, comunicação, administração, matemática financeira e outras formações que fortalecem minha base profissional.</p>
                 </article>
             </section>
-            <section>
+            <section id="contato">
                 <h2>Contato</h2>
                 <p>Estou aberto a oportunidades, networking e conversas sobre tecnologia. Caso queira entrar em contato, fique à vontade para me enviar uma mensagem.</p>
             </section>
         </div>
         <aside class="secundario">
-            <h2>Tecnologias principais</h2>
-            <p>HTML, CSS, JavaScript, SQL e GLPI.</p>
-
-            <h2>Áreas de interesse</h2>
-            <p>Desenvolvimento web, back-end, suporte técnico, help desk e banco de dados.</p>
-
-            <h2>Perfil</h2>
-            <p>Profissional organizado, comprometido e com foco em aprendizado contínuo.</p>
+            <div class="card">
+                <h2>Tecnologias principais</h2>
+                <p>HTML, CSS, JavaScript, SQL e GLPI.</p>
+                <h2>Áreas de interesse</h2>
+                <p>Desenvolvimento web, back-end, suporte técnico, help desk e banco de dados.</p>
+                <h2>Perfil</h2>
+                <p>Profissional organizado, comprometido e com foco em aprendizado contínuo.</p>
+            </div>
         </aside>
     </main>
     <footer class="rodape">

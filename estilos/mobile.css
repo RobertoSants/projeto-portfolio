@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@media (max-width: 768px) {
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+        
+    }
+
+    /* RESET do GRID */
+    header, .menu, main, .rodape {
+        margin: 6px 0;
+        width: 100%;
+        grid-area: auto;
+        grid-column: 1;
+    }
+
+    .principal section:hover, .secundario:hover {
+        transform: none;
+    }
+
+    .principal, .secundario {
+        min-width: 0;
+    }
+    
+    body {
+        grid-template-columns: 1fr;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    main > * {
+        min-width: 0;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        place-items: stretch;
+    }
+
+    .secundario {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .principal {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .botao {
+        flex: 1 1 120px;
+        min-width: 0;
+    }
+
+    a {
+        word-break: break-word;
+    }
+
+    .rodape {
+        grid-column: 1;
+        grid-area: auto;
+        padding: 0 10px;
+    }
+}
